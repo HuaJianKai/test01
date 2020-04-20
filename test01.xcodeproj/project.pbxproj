@@ -16,7 +16,7 @@
 		547E8AB2244D469F00708181 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 547E8AB1244D469F00708181 /* main.m */; };
 		547E8ABC244D469F00708181 /* test01Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 547E8ABB244D469F00708181 /* test01Tests.m */; };
 		547E8AC7244D469F00708181 /* test01UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 547E8AC6244D469F00708181 /* test01UITests.m */; };
-		547E8AF0244D46EA00708181 /* libsubtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 547E8AEE244D46C900708181 /* libsubtest.a */; };
+		BC9C0082284D1F7D7F271EF5 /* libPods-test01.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C31D5B69E7B7A56C3C881E84 /* libPods-test01.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,16 +34,10 @@
 			remoteGlobalIDString = 547E8A9B244D469E00708181;
 			remoteInfo = test01;
 		};
-		547E8AED244D46C900708181 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 547E8AE9244D46C900708181 /* subtest.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 547E8ADD244D46B400708181;
-			remoteInfo = subtest;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A90A8E89BA9C3F3F159D23C /* Pods-test01.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test01.debug.xcconfig"; path = "Target Support Files/Pods-test01/Pods-test01.debug.xcconfig"; sourceTree = "<group>"; };
 		547E8A9C244D469E00708181 /* test01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		547E8A9F244D469E00708181 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		547E8AA0244D469E00708181 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,7 +56,8 @@
 		547E8AC2244D469F00708181 /* test01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = test01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		547E8AC6244D469F00708181 /* test01UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = test01UITests.m; sourceTree = "<group>"; };
 		547E8AC8244D469F00708181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		547E8AE9244D46C900708181 /* subtest.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = subtest.xcodeproj; path = subtest/subtest.xcodeproj; sourceTree = "<group>"; };
+		C31D5B69E7B7A56C3C881E84 /* libPods-test01.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test01.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F531D26DB6F5A30D2FFDF3E5 /* Pods-test01.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test01.release.xcconfig"; path = "Target Support Files/Pods-test01/Pods-test01.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				547E8AF0244D46EA00708181 /* libsubtest.a in Frameworks */,
+				BC9C0082284D1F7D7F271EF5 /* libPods-test01.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,15 +86,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4629268998163BF715034667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A90A8E89BA9C3F3F159D23C /* Pods-test01.debug.xcconfig */,
+				F531D26DB6F5A30D2FFDF3E5 /* Pods-test01.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		547E8A93244D469E00708181 = {
 			isa = PBXGroup;
 			children = (
-				547E8AE9244D46C900708181 /* subtest.xcodeproj */,
 				547E8A9E244D469E00708181 /* test01 */,
 				547E8ABA244D469F00708181 /* test01Tests */,
 				547E8AC5244D469F00708181 /* test01UITests */,
 				547E8A9D244D469E00708181 /* Products */,
 				547E8AEF244D46EA00708181 /* Frameworks */,
+				4629268998163BF715034667 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,17 +153,10 @@
 			path = test01UITests;
 			sourceTree = "<group>";
 		};
-		547E8AEA244D46C900708181 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				547E8AEE244D46C900708181 /* libsubtest.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		547E8AEF244D46EA00708181 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C31D5B69E7B7A56C3C881E84 /* libPods-test01.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -171,6 +168,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 547E8ACB244D469F00708181 /* Build configuration list for PBXNativeTarget "test01" */;
 			buildPhases = (
+				2F4163107BCA56CCBBCBD421 /* [CP] Check Pods Manifest.lock */,
 				547E8A98244D469E00708181 /* Sources */,
 				547E8A99244D469E00708181 /* Frameworks */,
 				547E8A9A244D469E00708181 /* Resources */,
@@ -253,12 +251,6 @@
 			mainGroup = 547E8A93244D469E00708181;
 			productRefGroup = 547E8A9D244D469E00708181 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 547E8AEA244D46C900708181 /* Products */;
-					ProjectRef = 547E8AE9244D46C900708181 /* subtest.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				547E8A9B244D469E00708181 /* test01 */,
@@ -267,16 +259,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		547E8AEE244D46C900708181 /* libsubtest.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libsubtest.a;
-			remoteRef = 547E8AED244D46C900708181 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		547E8A9A244D469E00708181 /* Resources */ = {
@@ -304,6 +286,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F4163107BCA56CCBBCBD421 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-test01-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		547E8A98244D469E00708181 /* Sources */ = {
@@ -480,11 +487,11 @@
 		};
 		547E8ACC244D469F00708181 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A90A8E89BA9C3F3F159D23C /* Pods-test01.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7R836Y6LK;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/subtest\"/**";
 				INFOPLIST_FILE = test01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,11 +505,11 @@
 		};
 		547E8ACD244D469F00708181 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F531D26DB6F5A30D2FFDF3E5 /* Pods-test01.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B7R836Y6LK;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/subtest\"/**";
 				INFOPLIST_FILE = test01/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
